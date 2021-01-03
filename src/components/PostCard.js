@@ -31,7 +31,7 @@ function PostCard({
 					<LikeButton user={user} post={{id, likes, likeCount}} />
 				</Button>
 
-				<div className="ui button labeled" labelPosition="right" as={Link} to={`posts/${id}`} >
+				<Button labelPosition="right" as={Link} to={`posts/${id}`} >
 					<MyPopup 
 						content="Comment on post"
 						children={
@@ -43,7 +43,7 @@ function PostCard({
 					<Label basic color="blue" pointing="left">
 						{commentCount}
 					</Label>
-				</div>
+				</Button>
 
 				{user && user.username === username && (
 					<DeleteButton postId={id}/>
