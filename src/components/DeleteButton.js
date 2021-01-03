@@ -1,6 +1,6 @@
 import { useMutation } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 import { Button, Icon, Confirm } from 'semantic-ui-react';
 import { FETCH_POSTS_QUERY } from '../util/graphql';
 import MyPopup from './MyPopup';
