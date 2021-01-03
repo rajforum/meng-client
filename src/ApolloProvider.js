@@ -17,7 +17,7 @@ const authLink = setContext(() => {
 });
 
 const httpLink = createHttpLink({
-    uri: 'http://localhost:5000/'
+    uri: 'https://radiant-taiga-29183.herokuapp.com/'
 });
 
 const client = new ApolloClient({
